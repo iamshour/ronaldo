@@ -81,6 +81,11 @@ h3 {
   fill: #3F7295;
 }
 
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
 footer {
   background-color: #68B1A5;
   width: 100%;
