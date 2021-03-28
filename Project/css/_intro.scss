@@ -1,0 +1,182 @@
+.intro-page {
+    background-color: $bg-regular;
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "img1"
+    "card1"
+    "card2"
+    "img2";
+    
+    .img-1 {
+        grid-area: img1;
+        justify-self: end;
+        height: 36.9rem;
+        width: auto;
+        margin: 3rem 1.6rem 0 0;
+    }
+
+    .card-1 {
+        grid-area:  card1;  
+        text-align: justify;
+        margin: -1rem 1.6rem 1.6rem 1.6rem;
+
+        .card-content {
+            text-indent: 1rem;
+        }
+    }
+
+    .card-2 {
+        grid-area: card2;
+        text-align: justify;
+    }
+
+    .mini {
+        grid-area: img2;
+        margin: 1.6rem 1.6rem 0 1.6rem;
+        display: flex;
+       
+        .img-2 {
+            width: 100%;
+            height: auto;
+            justify-self: end;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .grid-container {
+        margin-top: 2rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "card1 img1"
+        "card2 card2"
+        "img2 img2";
+        
+        .img-1 {
+            grid-area: img1;
+            justify-self: end;
+            height: 30rem;
+            width: auto;
+            margin: 3rem 3rem 0 0;
+        }
+    
+        .card-1 {
+            grid-area:  card1;  
+            margin: auto 3rem;
+        }
+
+        .card-2 {
+            grid-area: card2;
+            margin: 3rem;
+        }
+        
+        .mini {
+            grid-area: img2;
+            margin: 0 3rem 0 3rem;
+           
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .circle::before {
+        content: "";
+        position: absolute;
+        height: 41rem;
+        width: 41rem;
+        top: -14rem;
+        left: -14rem;
+        border-radius: 50%;
+        background-color: $bg-dark;
+        z-index: -1;
+    }
+
+    .grid-container {
+        margin-top: 20rem;
+
+        .img-1 {
+            margin: 0;
+            justify-self: start;
+            height: 33rem;
+        }
+
+        .card-1 {
+            width: 46.8rem;
+            height: auto;
+            justify-self: start;
+            margin: auto 1rem auto 3rem;
+        }
+
+        .card-2 {
+            width: 70.7rem;
+            height: auto;
+            margin-top: 3rem;
+            justify-self: end;
+        }
+        
+        .mini {
+            margin: 0;
+            justify-content: center;
+            
+            .img-2 {
+                width: 70rem;
+                height: auto;
+            }
+        }
+    } 
+}
+   
+@media only screen and (min-width: 1080px) {
+    
+    .grid-container {
+        margin-top: 4rem;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "card1 img1"
+        "img2 card2";
+
+        .img-1 {
+            grid-area: img1;
+            margin: 0 auto 8rem 8rem;
+            justify-self: center;
+            height: 38.6rem;
+        }
+
+        .card-1 {
+            grid-area: card1;
+            width: 59.6rem;
+            justify-self: start;
+            margin: auto 0 0 4rem;
+        }
+
+        .card-2 {
+            grid-area: card2;
+            width: 35.9rem;
+            margin: 4rem 4rem 4rem 0 ;
+            justify-self: end;
+        }
+        
+        .mini {
+            grid-area: img2;
+            margin: 0;
+            justify-content: center;
+            align-content: center;
+            align-self: flex-end;
+            
+            .img-2 {
+                width: auto;
+                height: 34.5rem;
+            }
+        }
+
+    } 
+}

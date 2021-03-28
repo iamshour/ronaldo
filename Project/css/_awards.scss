@@ -1,0 +1,298 @@
+.awards-page {
+    background-color: $bg-regular;
+    position: relative;
+}
+
+.awards-grid {
+
+        margin: 1.6rem auto 6rem auto;
+        
+    .award {
+        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2.4rem;
+
+        &:last-child {
+            margin-bottom: 0rem;
+        }
+    
+        .pics {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            img {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+
+        .shelf {
+            justify-self: center;
+            align-self: center;
+            background-color: $bg-regular;
+            border: 1px solid $shelf-stroke;
+            border-radius: 0 0 1.6rem 1.6rem;
+            box-shadow: 2px 2px 22px rgba(14, 35, 49, 0.35);
+            
+            ul {
+                display: flex;
+                flex-direction: row;
+                margin: .6rem 1.6rem;
+                justify-content: center;
+                
+                li {
+                    padding-right: 3.2rem;
+                    font-size: 1rem;
+                    font-weight: bold;
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+        .label {
+            justify-self: center;
+            align-self: center;
+            background-color: $label-fill;
+            padding: .8rem 1.6rem;
+            border-radius: 1.6rem;
+            border: 2px solid $label-stroke;
+            margin-top: .8rem;
+
+            p {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .rectangle {
+        
+        content: '';
+        position: absolute;
+        z-index: -1000;
+        filter: blur(10px);
+        width: 34rem;
+        height: 22rem;
+        top: -8rem;
+        left: -12rem;
+        background-color: $bg-dark;
+        transform: rotate(45deg);
+    }    
+
+    .awards-grid {
+
+        margin: 14rem auto 10rem auto;
+        
+    .award {
+        
+        margin-bottom: 3.2rem;
+
+        .pics {
+            img {
+                width: unset;
+                height: unset;
+            }
+        }
+
+        .shelf {
+            
+            box-shadow: 8px 8px 22px rgba(14, 35, 49, 0.4);
+            
+            ul {
+                margin: .6rem 6.4rem;
+                
+                li {
+                    padding-right: 6.8rem;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .label {
+
+            margin-top: 1.6rem;
+
+            p {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+}
+
+@media only screen and (min-width: 1080px) {
+
+    .awards-grid {
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas: 
+        "ballon ballon fifa-poty"
+        "fifpro uefa-forward uefa-goal"
+        "golden-boot uefa-best uefa-best"
+        "pl-top pfa-young pfa-players"
+        "fwa pl-pots liga-pots"
+        "gran seriea-mvp top-division"
+        "top-g top-g top-g-century"
+        "top-g-decade best-national-g best-national-g"
+        "best-uefa-iffhs nations-league bravo"
+        "world-soccer world-soccer onze"
+        "di-stefano puskas golden-foot"
+        "cnid cnid cnid"
+        "ucl-g ucl-g ucl-g";
+    }
+
+    .ballon {
+        grid-area: ballon;
+        margin-left: -14rem; 
+    }
+
+    .fifa-poty {
+        grid-area: fifa-poty;
+        margin-left: -18rem;
+    }
+
+    .fifpro {
+        grid-area: fifpro;
+        margin-left: -18rem; 
+    }
+
+    .uefa-forward {
+        grid-area: uefa-forward;
+        margin-left: -30rem; 
+    }
+
+    .uefa-goal {
+        grid-area: uefa-goal;
+        margin-left: -10rem;
+    }
+
+    .golden-boot {
+        grid-area: golden-boot;
+        margin-left: 4rem; 
+    }
+
+    .uefa-best {
+        grid-area: uefa-best;
+        margin-left: -4rem;
+    }
+
+    .pl-top {
+        grid-area: pl-top;
+    }
+
+    .pfa-young {
+        grid-area: pfa-young;
+        margin-left: -8rem;
+    }
+
+    .pfa-players {
+        grid-area: pfa-players;
+        margin-left: -8rem;
+    }
+
+    .fwa {
+        grid-area: fwa;
+        margin-left: -14rem;
+    }
+
+    .pl-pots {
+        grid-area: pl-pots;
+        margin-left: -24rem;
+    }
+
+    .liga-pots {
+        grid-area: liga-pots;
+        margin-left: -10rem;
+    }
+
+    .gran {
+        grid-area: gran;
+        margin-left: -6rem;
+    }
+
+    .seriea-mvp {
+        grid-area: seriea-mvp;
+        margin-left: -26rem;
+    }
+
+    .top-division {
+        grid-area: top-division;
+        margin-left: -18rem;
+    }
+
+    .top-g {
+        grid-area: top-g;
+        margin-left: -14rem;
+    }
+
+    .top-g-century {
+        grid-area: top-g-century;
+        margin-left: -24rem;
+    }
+
+    .top-g-decade {
+        grid-area: top-g-decade;
+    }
+
+    .best-national-g {
+        grid-area: best-national-g;
+    }
+
+    .best-uefa-iffhs {
+        grid-area: best-uefa-iffhs;
+        margin-left: -18rem;
+    }
+
+    .nations-league {
+        grid-area: nations-league;
+        margin-left: -30rem;
+    }
+
+    .bravo {
+        grid-area: bravo;
+        margin-left: -12rem;
+    }
+
+    .world-soccer {
+        grid-area: world-soccer;
+        margin-left: -8rem;
+    }
+
+    .onze {
+        grid-area: onze;
+        margin-left: -14rem;
+    }
+
+    .di-stefano {
+        grid-area: di-stefano;
+        margin-left: 4rem;
+    }
+
+    .puskas {
+        grid-area: puskas;
+        margin-left: 2rem;
+    }
+
+    .golden-foot {
+        grid-area: golden-foot;
+    }
+
+    .cnid {
+        grid-area: cnid;
+    }
+
+    .ucl-g {
+        grid-area: ucl-g;
+    }
+}

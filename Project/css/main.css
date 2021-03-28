@@ -1,0 +1,1918 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@400;600&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0E2331;
+  height: 100vh;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #D8FFF8;
+}
+
+a:hover {
+  color: #0E2331;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 4rem;
+  width: 25.2rem;
+  text-align: center;
+}
+
+h1 span {
+  font-size: 5.8rem;
+}
+
+h2 {
+  font-family: "Libre Baskerville", serif;
+  color: #D8FFF8;
+  line-height: auto;
+  font-size: 2.6rem;
+  font-weight: 400;
+  height: auto;
+  position: absolute;
+  top: 2.4rem;
+  left: 1.6rem;
+  width: 50%;
+}
+
+h3 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  padding-bottom: .8rem;
+  color: #0E2331;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.btn {
+  background-color: #3F7295;
+  color: #D8FFF8;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #D8FFF8;
+  color: #3F7295;
+}
+
+.btn:hover svg {
+  fill: #3F7295;
+}
+
+footer {
+  background-color: #68B1A5;
+  width: 100%;
+  height: 9.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .btn-back, footer .btn-next {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  padding: 0.8rem 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .btn-back svg, footer .btn-next svg {
+  padding-right: .8rem;
+  fill: #D8FFF8;
+}
+
+footer .btn-back {
+  margin: auto auto auto 1.6rem;
+}
+
+footer .btn-next {
+  margin: auto 1.6rem auto auto;
+}
+
+footer .btn-next svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card {
+  border-radius: 1.6rem;
+  background-color: #D8FFF8;
+  padding: 1rem;
+  margin: 0 1.6rem;
+}
+
+.card-content {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 3rem;
+    top: 3rem;
+    left: 3rem;
+    width: 80vw;
+    text-align: left;
+  }
+  footer .btn-back, footer .btn-next {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    padding: 1rem 1.6rem;
+  }
+  footer .btn-back svg, footer .btn-next svg {
+    padding-right: 1rem;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    margin-top: .4rem;
+  }
+  footer .btn-back {
+    margin: auto auto auto 3rem;
+  }
+  footer .btn-next {
+    margin: auto 3rem auto auto;
+  }
+  footer .btn-next svg {
+    -webkit-transform: scale(1.2) rotate(180deg);
+            transform: scale(1.2) rotate(180deg);
+  }
+  .card-content {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 6.5rem;
+    font-weight: 400;
+    line-height: 8.8rem;
+    width: 57.3rem;
+    text-align: center;
+  }
+  h1 span {
+    font-size: 13.3rem;
+  }
+  h2 {
+    font-size: 3.8rem;
+    top: 10.4rem;
+    left: 3rem;
+    width: 80vw;
+    text-align: left;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  .card-content {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  h2 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    top: 11.7rem;
+    left: 4rem;
+    width: 26.8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 11px;
+  }
+  body {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  footer {
+    border-radius: 1.6rem;
+  }
+}
+
+.home-page {
+  background-image: -webkit-gradient(linear, left top, right top, from(#7DBCB1), to(#6597B9));
+  background-image: linear-gradient(to right, #7DBCB1, #6597B9);
+}
+
+.btn-home {
+  text-align: center;
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+  margin: 1.8rem auto 5rem auto;
+  padding: 0.8rem 1.6rem;
+}
+
+.hero {
+  height: 90vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+.hero .text-area {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .img-area {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  height: 51rem;
+}
+
+.hero .img-area img {
+  height: 100%;
+  width: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-home {
+    margin: 2.5rem auto 5rem auto;
+    padding: 1.2rem 3.6rem;
+    font-size: 2.7rem;
+    line-height: 4.1rem;
+  }
+  .hero .img-area {
+    height: 57rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .hero {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  .hero .text-area {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 3 / 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .hero .img-area {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / 3 / 3;
+    height: 75vh;
+  }
+}
+
+nav {
+  display: none;
+}
+
+.nav-container {
+  height: 10vh;
+}
+
+.nav-container .mobile-menu {
+  fill: #D8FFF8;
+  cursor: pointer;
+  float: right;
+  margin: 2.4rem 1.6rem 0 0;
+}
+
+.nav-container .mobile-menu:hover {
+  fill: #0E2331;
+}
+
+.nav-container nav.menu-btn {
+  display: block;
+}
+
+.nav-container nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  min-width: 25rem;
+  right: 0;
+  top: 0;
+  background-color: #255372;
+  height: 100vh;
+  -webkit-animation: navig .5s ease alternate;
+          animation: navig .5s ease alternate;
+}
+
+.nav-container nav .mobile-menu-exit {
+  float: right;
+  margin-top: 2.4rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+  color: #D8FFF8;
+}
+
+.nav-container nav .mobile-menu-exit:hover {
+  color: #0E2331;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.nav-container nav .nav-list {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2.2rem;
+}
+
+.nav-container nav .nav-list li {
+  display: block;
+  padding-bottom: 5.6rem;
+}
+
+.nav-container nav .nav-list li .current {
+  color: #0E2331;
+  font-weight: bold;
+}
+
+.nav-container nav .nav-list li a:hover {
+  font-weight: bold;
+}
+
+@-webkit-keyframes navig {
+  0% {
+    opacity: 20%;
+    right: -80%;
+  }
+  100% {
+    opacity: 100%;
+    right: 0%;
+  }
+}
+
+@keyframes navig {
+  0% {
+    opacity: 20%;
+    right: -80%;
+  }
+  100% {
+    opacity: 100%;
+    right: 0%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-container .mobile-menu {
+    margin: 3rem 3rem 0 0;
+  }
+  .nav-container nav .mobile-menu-exit {
+    margin-top: 3rem;
+    margin-right: 3rem;
+  }
+  .nav-container nav .nav-list {
+    font-size: 3.2rem;
+  }
+  .nav-container nav .nav-list li {
+    padding-bottom: 7.4rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .nav-container .mobile-menu, .nav-container .mobile-menu-exit {
+    display: none;
+  }
+  .nav-container nav {
+    display: block;
+    position: relative;
+    background-color: unset;
+    height: auto;
+    width: 100%;
+    -webkit-animation: none;
+            animation: none;
+    padding: 3rem 4rem 0 0;
+  }
+  .nav-container nav .nav-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 2.4rem;
+  }
+  .nav-container nav .nav-list li {
+    margin: 0 0 0 4.8rem;
+  }
+}
+
+.intro-page {
+  background-color: #7DBCB1;
+  position: relative;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: "img1" "card1" "card2" "img2";
+}
+
+.grid-container .img-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img1;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  height: 36.9rem;
+  width: auto;
+  margin: 3rem 1.6rem 0 0;
+}
+
+.grid-container .card-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card1;
+  text-align: justify;
+  margin: -1rem 1.6rem 1.6rem 1.6rem;
+}
+
+.grid-container .card-1 .card-content {
+  text-indent: 1rem;
+}
+
+.grid-container .card-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: card2;
+  text-align: justify;
+}
+
+.grid-container .mini {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: img2;
+  margin: 1.6rem 1.6rem 0 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-container .mini .img-2 {
+  width: 100%;
+  height: auto;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+@media only screen and (min-width: 600px) {
+  .grid-container {
+    margin-top: 2rem;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "card1 img1" "card2 card2" "img2 img2";
+  }
+  .grid-container .img-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img1;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    height: 30rem;
+    width: auto;
+    margin: 3rem 3rem 0 0;
+  }
+  .grid-container .card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: card1;
+    margin: auto 3rem;
+  }
+  .grid-container .card-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: card2;
+    margin: 3rem;
+  }
+  .grid-container .mini {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: img2;
+    margin: 0 3rem 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .circle::before {
+    content: "";
+    position: absolute;
+    height: 41rem;
+    width: 41rem;
+    top: -14rem;
+    left: -14rem;
+    border-radius: 50%;
+    background-color: #68B1A5;
+    z-index: -1;
+  }
+  .grid-container {
+    margin-top: 20rem;
+  }
+  .grid-container .img-1 {
+    margin: 0;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    height: 33rem;
+  }
+  .grid-container .card-1 {
+    width: 46.8rem;
+    height: auto;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin: auto 1rem auto 3rem;
+  }
+  .grid-container .card-2 {
+    width: 70.7rem;
+    height: auto;
+    margin-top: 3rem;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .grid-container .mini {
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .grid-container .mini .img-2 {
+    width: 70rem;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .grid-container {
+    margin-top: 4rem;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "card1 img1" "img2 card2";
+  }
+  .grid-container .img-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img1;
+    margin: 0 auto 8rem 8rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    height: 38.6rem;
+  }
+  .grid-container .card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: card1;
+    width: 59.6rem;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin: auto 0 0 4rem;
+  }
+  .grid-container .card-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: card2;
+    width: 35.9rem;
+    margin: 4rem 4rem 4rem 0;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .grid-container .mini {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: img2;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .grid-container .mini .img-2 {
+    width: auto;
+    height: 34.5rem;
+  }
+}
+
+.career-page {
+  background-color: #7DBCB1;
+  position: relative;
+}
+
+.tournament {
+  font-weight: bold;
+}
+
+.career-grid {
+  margin-bottom: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: (auto)[21];
+      grid-template-rows: repeat(21, auto);
+  place-items: center;
+      grid-template-areas: "sporting-pic" "sporting-card" "manu-pic" "manu-card" "mardid-pic-1" "madrid-card-1" "mardid-pic-2" "madrid-card-2" "juve-pic-1" "juve-card-1" "juve-pic-2" "juve-card-2" "portugal-pic-1" "portugal-card-1" "portugal-card-2" "portugal-pic-2" "portugal-card-3" "portugal-pic-3" "portugal-card-4" "portugal-pic-4" "portugal-card-5";
+}
+
+.career-grid .card {
+  margin-bottom: 2.4rem;
+}
+
+.career-grid .career-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sporting-pic;
+}
+
+.career-grid .c-card-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sporting-card;
+}
+
+.career-grid .career-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: manu-pic;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 5rem;
+}
+
+.career-grid .c-card-2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: manu-card;
+}
+
+.career-grid .career-3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: mardid-pic-1;
+}
+
+.career-grid .c-card-3 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: madrid-card-1;
+}
+
+.career-grid .career-4 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: mardid-pic-2;
+}
+
+.career-grid .c-card-4 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: madrid-card-2;
+}
+
+.career-grid .career-5 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: juve-pic-1;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 5rem;
+}
+
+.career-grid .c-card-5 {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  grid-area: juve-card-1;
+}
+
+.career-grid .career-6 {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: juve-pic-2;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 5rem;
+}
+
+.career-grid .c-card-6 {
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  grid-area: juve-card-2;
+}
+
+.career-grid .career-7 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  grid-area: portugal-pic-1;
+}
+
+.career-grid .c-card-7 {
+  -ms-grid-row: 14;
+  -ms-grid-column: 1;
+  grid-area: portugal-card-1;
+}
+
+.career-grid .c-card-8 {
+  -ms-grid-row: 15;
+  -ms-grid-column: 1;
+  grid-area: portugal-card-2;
+}
+
+.career-grid .career-8 {
+  -ms-grid-row: 16;
+  -ms-grid-column: 1;
+  grid-area: portugal-pic-2;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 5rem;
+}
+
+.career-grid .c-card-9 {
+  -ms-grid-row: 17;
+  -ms-grid-column: 1;
+  grid-area: portugal-card-3;
+}
+
+.career-grid .career-9 {
+  -ms-grid-row: 18;
+  -ms-grid-column: 1;
+  grid-area: portugal-pic-3;
+}
+
+.career-grid .c-card-10 {
+  -ms-grid-row: 19;
+  -ms-grid-column: 1;
+  grid-area: portugal-card-4;
+}
+
+.career-grid .career-10 {
+  -ms-grid-row: 20;
+  -ms-grid-column: 1;
+  grid-area: portugal-pic-4;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 5rem;
+}
+
+.career-grid .c-card-11 {
+  -ms-grid-row: 21;
+  -ms-grid-column: 1;
+  grid-area: portugal-card-5;
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .triangle {
+    position: absolute;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #68B1A5;
+    height: 30rem;
+    width: 30rem;
+    z-index: -1;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    top: -12rem;
+    left: -5rem;
+  }
+  .career-page:before, .career-page:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+    background-color: #D8FFF8;
+    left: 0;
+    right: 0;
+  }
+  .career-page:before {
+    top: 100%;
+  }
+  .career-page:after {
+    top: 300%;
+  }
+  .career-grid {
+    margin: 0 3rem 6rem 3rem;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: (auto)[12];
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas: "sporting-pic sporting-pic sporting-pic" "sporting-card sporting-card sporting-card" "manu-card manu-card manu-pic" "mardid-pic-1 madrid-card-1 madrid-card-1" "madrid-card-2 madrid-card-2 mardid-pic-2" "juve-pic-1 juve-card-1 juve-card-1" "juve-card-2 juve-card-2 juve-pic-2" "portugal-pic-1 portugal-card-1 portugal-card-1" "portugal-card-2 portugal-card-2 portugal-card-2" "portugal-card-3 portugal-card-3 portugal-pic-2" "portugal-pic-3 portugal-card-4 portugal-card-4" "portugal-card-5 portugal-card-5 portugal-pic-4";
+  }
+  .career-grid .card {
+    margin: 0 auto 2.4rem auto;
+    position: relative;
+    overflow: visible;
+  }
+  .career-grid .card:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    border-radius: 16px;
+    border: 1px dashed #7DBCB1;
+  }
+  .career-grid .career-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: sporting-pic;
+  }
+  .career-grid .c-card-1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: sporting-card;
+  }
+  .career-grid .career-2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: manu-pic;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-right: 0;
+  }
+  .career-grid .c-card-2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: manu-card;
+    margin-right: -5.5rem;
+  }
+  .career-grid .career-3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: mardid-pic-1;
+  }
+  .career-grid .c-card-3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: madrid-card-1;
+    margin-left: -6.5rem;
+  }
+  .career-grid .career-4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    grid-area: mardid-pic-2;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .career-grid .c-card-4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: madrid-card-2;
+    margin-right: -5.5rem;
+  }
+  .career-grid .career-5 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: juve-pic-1;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-left: 0;
+  }
+  .career-grid .c-card-5 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: juve-card-1;
+    margin-left: -8rem;
+  }
+  .career-grid .career-6 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+    grid-area: juve-pic-2;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-right: 0;
+  }
+  .career-grid .c-card-6 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: juve-card-2;
+    margin-right: 1rem;
+  }
+  .career-grid .career-7 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: portugal-pic-1;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .career-grid .c-card-7 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: portugal-card-1;
+    margin-left: -10rem;
+  }
+  .career-grid .c-card-8 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: portugal-card-2;
+  }
+  .career-grid .career-8 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 3;
+    grid-area: portugal-pic-2;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-right: 0;
+  }
+  .career-grid .c-card-9 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: portugal-card-3;
+    margin-right: -12rem;
+  }
+  .career-grid .career-9 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+    grid-area: portugal-pic-3;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  .career-grid .c-card-10 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: portugal-card-4;
+    margin-left: -10rem;
+  }
+  .career-grid .career-10 {
+    -ms-grid-row: 12;
+    -ms-grid-column: 3;
+    grid-area: portugal-pic-4;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-left: 0;
+  }
+  .career-grid .c-card-11 {
+    -ms-grid-row: 12;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: portugal-card-5;
+    margin-right: -9rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .career-page:after {
+    display: none;
+  }
+  .career-grid {
+    margin: 3rem 3rem 6rem 3rem;
+    -ms-grid-rows: (auto)[11];
+        grid-template-rows: repeat(11, auto);
+        grid-template-areas: "sporting-pic sporting-card sporting-card" "manu-card manu-card manu-pic" "mardid-pic-1 madrid-card-1 madrid-card-1" "madrid-card-2 madrid-card-2 mardid-pic-2" "juve-pic-1 juve-card-1 juve-card-1" "juve-card-2 juve-card-2 juve-pic-2" "portugal-pic-1 portugal-card-1 portugal-card-1" "portugal-card-2 portugal-card-2 portugal-card-2" "portugal-card-3 portugal-card-3 portugal-pic-2" "portugal-pic-3 portugal-card-4 portugal-card-4" "portugal-card-5 portugal-card-5 portugal-pic-4";
+  }
+  .career-grid .card {
+    margin: 0;
+    margin-bottom: 2.4rem;
+  }
+  .career-grid .career-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: sporting-pic;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .career-grid .c-card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: sporting-card;
+  }
+  .career-grid .career-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: manu-pic;
+    width: 100%;
+  }
+  .career-grid .c-card-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: manu-card;
+    margin-right: 3rem;
+  }
+  .career-grid .career-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: mardid-pic-1;
+    width: 100%;
+  }
+  .career-grid .c-card-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: madrid-card-1;
+    margin-left: -3rem;
+  }
+  .career-grid .career-4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    grid-area: mardid-pic-2;
+    width: 100%;
+  }
+  .career-grid .c-card-4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: madrid-card-2;
+    margin-right: 3rem;
+  }
+  .career-grid .career-5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: juve-pic-1;
+    width: 100%;
+  }
+  .career-grid .c-card-5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: juve-card-1;
+    margin-left: 3rem;
+  }
+  .career-grid .career-6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 3;
+    grid-area: juve-pic-2;
+    width: 100%;
+  }
+  .career-grid .c-card-6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: juve-card-2;
+    margin-right: 3rem;
+  }
+  .career-grid .career-7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: portugal-pic-1;
+    width: 100%;
+  }
+  .career-grid .c-card-7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: portugal-card-1;
+    margin-left: 3rem;
+  }
+  .career-grid .c-card-8 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: portugal-card-2;
+  }
+  .career-grid .career-8 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+    grid-area: portugal-pic-2;
+    width: 100%;
+  }
+  .career-grid .c-card-9 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: portugal-card-3;
+    margin-right: 3rem;
+  }
+  .career-grid .career-9 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    grid-area: portugal-pic-3;
+    width: 100%;
+  }
+  .career-grid .c-card-10 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: portugal-card-4;
+    margin-left: 3rem;
+  }
+  .career-grid .career-10 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 3;
+    grid-area: portugal-pic-4;
+    width: 100%;
+  }
+  .career-grid .c-card-11 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: portugal-card-5;
+    margin-right: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .career-page:before, .career-page:after {
+    display: none;
+  }
+}
+
+.honours-page {
+  background-color: #7DBCB1;
+  position: relative;
+}
+
+.honours-grid {
+  margin: 1.6rem 0 6rem 0;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
+  place-content: center;
+  place-items: center;
+      grid-template-areas: "sporting" "united" "madrid" "juve" "portugal";
+}
+
+.honours-grid .hon-1, .honours-grid .hon-2, .honours-grid .hon-3 {
+  display: none;
+}
+
+.honours-grid .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.honours-grid .team:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.honours-grid .team .logo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 1.6rem;
+}
+
+.honours-grid .team .trophy-card {
+  position: relative;
+  margin-bottom: 2.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.honours-grid .team .trophy-card:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.honours-grid .team .trophy-card img {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.honours-grid .team .trophy-card .caption {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  width: 90%;
+  letter-spacing: -1px;
+}
+
+.honours-grid .team .trophy-card .custom {
+  padding-left: 2.2rem;
+}
+
+.honours-grid .team .trophy-card .background {
+  width: 35rem;
+  height: 7.5rem;
+  border-radius: 3.2rem;
+  background-color: #D8FFF8;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.honours-grid .sporting {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sporting;
+}
+
+.honours-grid .united {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: united;
+}
+
+.honours-grid .madrid {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: madrid;
+}
+
+.honours-grid .juve {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: juve;
+}
+
+.honours-grid .portugal {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: portugal;
+}
+
+@media only screen and (min-width: 768px) {
+  .star {
+    -webkit-filter: blur(7px);
+            filter: blur(7px);
+    position: absolute;
+    z-index: -1000;
+    top: -10rem;
+    left: -10rem;
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  .star .clippy {
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: #68B1A5;
+    height: 39rem;
+    width: 39rem;
+  }
+  .honours-grid {
+    margin: 10rem auto 6rem auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+    place-content: center;
+    place-items: center;
+        grid-template-areas: "sporting united" "madrid united" "madrid hon-1" "hon-2 juve" "portugal hon-3";
+  }
+  .honours-grid .hon-1, .honours-grid .hon-2, .honours-grid .hon-3 {
+    display: unset;
+    width: 34.56rem;
+    height: auto;
+  }
+  .honours-grid .team {
+    margin-bottom: 0rem;
+  }
+  .honours-grid .hon-1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: hon-1;
+    margin: 8rem auto -4rem auto;
+  }
+  .honours-grid .hon-2 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: hon-2;
+    margin: 4rem auto 10rem auto;
+  }
+  .honours-grid .hon-3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: hon-3;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    margin-bottom: -6rem;
+  }
+  .honours-grid .sporting {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: sporting;
+  }
+  .honours-grid .united {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: united;
+  }
+  .honours-grid .madrid {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: madrid;
+  }
+  .honours-grid .juve {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: juve;
+    margin: 2rem auto -6rem auto;
+  }
+  .honours-grid .portugal {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: portugal;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .honours-grid .hon-1, .honours-grid .hon-2, .honours-grid .hon-3 {
+    width: 44.56rem;
+    height: auto;
+  }
+}
+
+.awards-page {
+  background-color: #7DBCB1;
+  position: relative;
+}
+
+.awards-grid {
+  margin: 1.6rem auto 6rem auto;
+}
+
+.awards-grid .award {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2.4rem;
+}
+
+.awards-grid .award:last-child {
+  margin-bottom: 0rem;
+}
+
+.awards-grid .award .pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.awards-grid .award .pics img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.awards-grid .award .shelf {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #7DBCB1;
+  border: 1px solid #56A597;
+  border-radius: 0 0 1.6rem 1.6rem;
+  -webkit-box-shadow: 2px 2px 22px rgba(14, 35, 49, 0.35);
+          box-shadow: 2px 2px 22px rgba(14, 35, 49, 0.35);
+}
+
+.awards-grid .award .shelf ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: .6rem 1.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.awards-grid .award .shelf ul li {
+  padding-right: 3.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.awards-grid .award .shelf ul li:last-child {
+  padding-right: 0;
+}
+
+.awards-grid .award .label {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #63A599;
+  padding: .8rem 1.6rem;
+  border-radius: 1.6rem;
+  border: 2px solid #256358;
+  margin-top: .8rem;
+}
+
+.awards-grid .award .label p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .rectangle {
+    content: '';
+    position: absolute;
+    z-index: -1000;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+    width: 34rem;
+    height: 22rem;
+    top: -8rem;
+    left: -12rem;
+    background-color: #68B1A5;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .awards-grid {
+    margin: 14rem auto 10rem auto;
+  }
+  .awards-grid .award {
+    margin-bottom: 3.2rem;
+  }
+  .awards-grid .award .pics img {
+    width: unset;
+    height: unset;
+  }
+  .awards-grid .award .shelf {
+    -webkit-box-shadow: 8px 8px 22px rgba(14, 35, 49, 0.4);
+            box-shadow: 8px 8px 22px rgba(14, 35, 49, 0.4);
+  }
+  .awards-grid .award .shelf ul {
+    margin: .6rem 6.4rem;
+  }
+  .awards-grid .award .shelf ul li {
+    padding-right: 6.8rem;
+    font-size: 1.4rem;
+  }
+  .awards-grid .award .label {
+    margin-top: 1.6rem;
+  }
+  .awards-grid .award .label p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .awards-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: (auto)[12];
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas: "ballon ballon fifa-poty" "fifpro uefa-forward uefa-goal" "golden-boot uefa-best uefa-best" "pl-top pfa-young pfa-players" "fwa pl-pots liga-pots" "gran seriea-mvp top-division" "top-g top-g top-g-century" "top-g-decade best-national-g best-national-g" "best-uefa-iffhs nations-league bravo" "world-soccer world-soccer onze" "di-stefano puskas golden-foot" "cnid cnid cnid" "ucl-g ucl-g ucl-g";
+  }
+  .ballon {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: ballon;
+    margin-left: -14rem;
+  }
+  .fifa-poty {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: fifa-poty;
+    margin-left: -18rem;
+  }
+  .fifpro {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: fifpro;
+    margin-left: -18rem;
+  }
+  .uefa-forward {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: uefa-forward;
+    margin-left: -30rem;
+  }
+  .uefa-goal {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: uefa-goal;
+    margin-left: -10rem;
+  }
+  .golden-boot {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: golden-boot;
+    margin-left: 4rem;
+  }
+  .uefa-best {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: uefa-best;
+    margin-left: -4rem;
+  }
+  .pl-top {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: pl-top;
+  }
+  .pfa-young {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: pfa-young;
+    margin-left: -8rem;
+  }
+  .pfa-players {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    grid-area: pfa-players;
+    margin-left: -8rem;
+  }
+  .fwa {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: fwa;
+    margin-left: -14rem;
+  }
+  .pl-pots {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: pl-pots;
+    margin-left: -24rem;
+  }
+  .liga-pots {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    grid-area: liga-pots;
+    margin-left: -10rem;
+  }
+  .gran {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: gran;
+    margin-left: -6rem;
+  }
+  .seriea-mvp {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    grid-area: seriea-mvp;
+    margin-left: -26rem;
+  }
+  .top-division {
+    -ms-grid-row: 6;
+    -ms-grid-column: 3;
+    grid-area: top-division;
+    margin-left: -18rem;
+  }
+  .top-g {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: top-g;
+    margin-left: -14rem;
+  }
+  .top-g-century {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+    grid-area: top-g-century;
+    margin-left: -24rem;
+  }
+  .top-g-decade {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: top-g-decade;
+  }
+  .best-national-g {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: best-national-g;
+  }
+  .best-uefa-iffhs {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    grid-area: best-uefa-iffhs;
+    margin-left: -18rem;
+  }
+  .nations-league {
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
+    grid-area: nations-league;
+    margin-left: -30rem;
+  }
+  .bravo {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+    grid-area: bravo;
+    margin-left: -12rem;
+  }
+  .world-soccer {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: world-soccer;
+    margin-left: -8rem;
+  }
+  .onze {
+    -ms-grid-row: 10;
+    -ms-grid-column: 3;
+    grid-area: onze;
+    margin-left: -14rem;
+  }
+  .di-stefano {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+    grid-area: di-stefano;
+    margin-left: 4rem;
+  }
+  .puskas {
+    -ms-grid-row: 11;
+    -ms-grid-column: 2;
+    grid-area: puskas;
+    margin-left: 2rem;
+  }
+  .golden-foot {
+    -ms-grid-row: 11;
+    -ms-grid-column: 3;
+    grid-area: golden-foot;
+  }
+  .cnid {
+    -ms-grid-row: 12;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: cnid;
+  }
+  .ucl-g {
+    -ms-grid-row: 13;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: ucl-g;
+  }
+}
+
+.legacy-page {
+  background-color: #A7E1D7;
+  position: relative;
+}
+
+.custom-card {
+  text-align: justify;
+  text-indent: 1.6rem;
+  word-spacing: -1px;
+  margin-top: 4rem;
+}
+
+.legacy-grid {
+  margin: 6rem 1.6rem;
+}
+
+.container {
+  border-radius: 5px;
+  font-family: "Libre Baskerville", serif;
+}
+
+.container h5 {
+  font-size: 2.2rem;
+  color: #0E2331;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.container h5 span {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.container .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: .8rem;
+}
+
+.container .row:last-child {
+  margin-bottom: 0;
+}
+
+.container input[type=text], .container textarea {
+  font-family: "Poppins", sans-serif;
+  padding: 12px;
+  border: 1px solid #68B1A5;
+  border-radius: 1.6rem;
+  background-color: #D8FFF8;
+}
+
+.container input[type=text]:focus, .container textarea:focus {
+  outline: none;
+  border: 2px solid #68B1A5;
+  background-color: #e4f7f3;
+}
+
+.container input[type=submit] {
+  font-family: "Poppins", sans-serif;
+  background-color: #68B1A5;
+  color: #D8FFF8;
+  padding: .6rem 3.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid #418075;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container input[type=submit]:hover {
+  background-color: #24665b;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container input[type=submit]:focus {
+  outline: none;
+  background-color: #68B1A5;
+  color: #0E2331;
+}
+
+.legacy-footer .box {
+  display: none;
+}
+
+.footer-pic {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .custom-card {
+    word-spacing: 0;
+    margin: 10rem 3rem 0 3rem;
+  }
+  .legacy-grid {
+    margin: 6rem 3rem 0 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .legacy-grid .footer-pic {
+    display: unset;
+    width: 50%;
+    height: 50%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    justify-self: flex-end;
+    margin-left: 3rem;
+  }
+  .legacy-grid .container {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .custom-card {
+    word-spacing: 0;
+    margin: 10rem auto 5rem auto;
+    width: 75%;
+  }
+  .legacy-grid {
+    margin: 0 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .legacy-grid .footer-pic {
+    margin-left: 4rem;
+  }
+  .legacy-grid .container {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

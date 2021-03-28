@@ -1,0 +1,459 @@
+.career-page {
+    background-color: $bg-regular;
+    position: relative;
+}
+
+.tournament {
+    font-weight: bold;
+}
+
+.career-grid {
+    margin-bottom: 1rem;
+    .card {
+        margin-bottom: 2.4rem;
+    }
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(21, auto);
+    place-items: center;
+    grid-template-areas: 
+    "sporting-pic"
+    "sporting-card"
+    "manu-pic"
+    "manu-card"
+    "mardid-pic-1"
+    "madrid-card-1"
+    "mardid-pic-2"
+    "madrid-card-2"
+    "juve-pic-1"
+    "juve-card-1"
+    "juve-pic-2"
+    "juve-card-2"
+    "portugal-pic-1"
+    "portugal-card-1"
+    "portugal-card-2"
+    "portugal-pic-2"
+    "portugal-card-3"
+    "portugal-pic-3"
+    "portugal-card-4"
+    "portugal-pic-4"
+    "portugal-card-5";
+
+    .career-1 {
+       grid-area: sporting-pic;
+
+    }
+
+    .c-card-1 {
+        grid-area: sporting-card;
+    }
+
+    .career-2 {
+        grid-area: manu-pic;
+        justify-self: end;
+        margin-right: 5rem;
+    }
+    
+    .c-card-2 {
+        grid-area: manu-card;
+    }
+
+    .career-3 {
+        grid-area: mardid-pic-1;
+    }
+
+    .c-card-3 {
+        grid-area: madrid-card-1;
+    }
+
+    .career-4 {
+        grid-area: mardid-pic-2;
+    }
+
+    .c-card-4 {
+        grid-area: madrid-card-2;
+    }
+
+    .career-5 {
+        grid-area: juve-pic-1;
+        justify-self: start;
+        margin-left: 5rem;
+    }
+
+    .c-card-5 {
+        grid-area: juve-card-1;
+    }
+
+    .career-6 {
+        grid-area: juve-pic-2;
+        justify-self: end;
+        margin-right: 5rem;
+    }
+
+    .c-card-6 {
+        grid-area: juve-card-2;
+    }
+
+    .career-7 {
+        grid-area: portugal-pic-1;
+    }
+
+    .c-card-7 {
+        grid-area: portugal-card-1;
+    }
+
+    .c-card-8 {
+        grid-area: portugal-card-2;
+    }
+    
+    .career-8 {
+        grid-area: portugal-pic-2;
+        justify-self: end;
+        margin-right: 5rem;
+    }
+
+    .c-card-9 {
+        grid-area: portugal-card-3;
+    }
+
+    .career-9 {
+        grid-area: portugal-pic-3;
+    }
+
+    .c-card-10 {
+        grid-area: portugal-card-4;
+    }
+
+    .career-10 {
+        grid-area: portugal-pic-4;
+        justify-self: start;
+        margin-left: 5rem;
+    }
+
+    .c-card-11 {
+        grid-area: portugal-card-5;
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+    .triangle {
+        position: absolute;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        background-color: $bg-dark;
+        height: 30rem;
+        width: 30rem;
+        z-index: -1;
+        filter: blur(40px);
+        top: -12rem;
+        left: -5rem;
+    }
+        
+    .career-page:before, .career-page:after  {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1000;
+        background-color: $bg-very-light;
+        left: 0;
+        right: 0;
+    }
+
+    .career-page:before {
+        top: 100%;
+    }
+
+    .career-page:after {
+        top: 300%;
+    }
+
+    .career-grid {
+        margin: 0 3rem 6rem 3rem;
+
+        .card {
+            margin: 0 auto 2.4rem auto;
+            position: relative;
+            overflow: visible;
+            // box-shadow: 0 0 0 .5px $bg-regular;
+        }
+        .card:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -1px;
+            bottom: -1px;
+            left: -1px;
+            right: -1px;
+            border-radius: 16px;
+            border: 1px dashed $bg-regular;
+        }
+    
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas: 
+        "sporting-pic sporting-pic sporting-pic"
+        "sporting-card sporting-card sporting-card"
+        "manu-card manu-card manu-pic"
+        "mardid-pic-1 madrid-card-1 madrid-card-1"
+        "madrid-card-2 madrid-card-2 mardid-pic-2"
+        "juve-pic-1 juve-card-1 juve-card-1"
+        "juve-card-2 juve-card-2 juve-pic-2"
+        "portugal-pic-1 portugal-card-1 portugal-card-1"
+        "portugal-card-2 portugal-card-2 portugal-card-2"
+        "portugal-card-3 portugal-card-3 portugal-pic-2"
+        "portugal-pic-3 portugal-card-4 portugal-card-4"
+        "portugal-card-5 portugal-card-5 portugal-pic-4";
+    
+        .career-1 {
+           grid-area: sporting-pic;
+    
+        }
+    
+        .c-card-1 {
+            grid-area: sporting-card;
+        }
+    
+        .career-2 {
+            grid-area: manu-pic;
+            justify-self: end;
+            margin-right: 0;
+           
+        }
+        
+        .c-card-2 {
+            grid-area: manu-card;
+            margin-right: -5.5rem;
+        }
+    
+        .career-3 {
+            grid-area: mardid-pic-1;
+        }
+    
+        .c-card-3 {
+            grid-area: madrid-card-1;
+            margin-left: -6.5rem;
+        }
+    
+        .career-4 {
+            grid-area: mardid-pic-2;
+            justify-self: end;
+        }
+    
+        .c-card-4 {
+            grid-area: madrid-card-2;
+            margin-right: -5.5rem;
+        }
+    
+        .career-5 {
+            grid-area: juve-pic-1;
+            justify-self: start;
+            margin-left: 0;
+        }
+    
+        .c-card-5 {
+            grid-area: juve-card-1;
+            margin-left: -8rem;
+        }
+    
+        .career-6 {
+            grid-area: juve-pic-2;
+            justify-self: end;
+            margin-right: 0;
+        }
+    
+        .c-card-6 {
+            grid-area: juve-card-2;
+            margin-right: 1rem;
+        }
+    
+        .career-7 {
+            grid-area: portugal-pic-1;
+            justify-self: start;
+        }
+    
+        .c-card-7 {
+            grid-area: portugal-card-1;
+            margin-left: -10rem;
+        }
+    
+        .c-card-8 {
+            grid-area: portugal-card-2;
+        }
+        
+        .career-8 {
+            grid-area: portugal-pic-2;
+            justify-self: end;
+            margin-right: 0;
+        }
+    
+        .c-card-9 {
+            grid-area: portugal-card-3;
+            margin-right: -12rem;
+        }
+    
+        .career-9 {
+            grid-area: portugal-pic-3;
+            justify-self: start;
+        }
+    
+        .c-card-10 {
+            grid-area: portugal-card-4;
+            margin-left: -10rem;
+        }
+    
+        .career-10 {
+            grid-area: portugal-pic-4;
+            justify-self: end;
+            margin-left: 0;
+        }
+    
+        .c-card-11 {
+            grid-area: portugal-card-5;
+           margin-right: -9rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+
+    .career-page:after {
+        display: none;
+    }
+
+    .career-grid {
+        margin: 3rem 3rem 6rem 3rem;
+
+        .card {
+            margin: 0;
+            margin-bottom: 2.4rem;
+        }
+
+        grid-template-rows: repeat(11, auto);
+        grid-template-areas: 
+        "sporting-pic sporting-card sporting-card"
+        "manu-card manu-card manu-pic"
+        "mardid-pic-1 madrid-card-1 madrid-card-1"
+        "madrid-card-2 madrid-card-2 mardid-pic-2"
+        "juve-pic-1 juve-card-1 juve-card-1"
+        "juve-card-2 juve-card-2 juve-pic-2"
+        "portugal-pic-1 portugal-card-1 portugal-card-1"
+        "portugal-card-2 portugal-card-2 portugal-card-2"
+        "portugal-card-3 portugal-card-3 portugal-pic-2"
+        "portugal-pic-3 portugal-card-4 portugal-card-4"
+        "portugal-card-5 portugal-card-5 portugal-pic-4";
+    
+        .career-1 {
+           grid-area: sporting-pic;
+           justify-self: center;
+        }
+    
+        .c-card-1 {
+            grid-area: sporting-card;
+        }
+    
+        .career-2 {
+            grid-area: manu-pic;
+            width: 100%;
+        }
+        
+        .c-card-2 {
+            grid-area: manu-card;
+            margin-right: 3rem;
+        }
+    
+        .career-3 {
+            grid-area: mardid-pic-1;
+            width: 100%;
+        }
+    
+        .c-card-3 {
+            grid-area: madrid-card-1;
+            margin-left: -3rem;
+        }
+    
+        .career-4 {
+            grid-area: mardid-pic-2;
+            width: 100%;
+        }
+    
+        .c-card-4 {
+            grid-area: madrid-card-2;
+            margin-right: 3rem;
+        }
+    
+        .career-5 {
+            grid-area: juve-pic-1;
+            width: 100%;
+        }
+    
+        .c-card-5 {
+            grid-area: juve-card-1;
+            margin-left: 3rem;
+        }
+    
+        .career-6 {
+            grid-area: juve-pic-2;
+            width: 100%;
+        }
+    
+        .c-card-6 {
+            grid-area: juve-card-2;
+            margin-right: 3rem;
+        }
+    
+        .career-7 {
+            grid-area: portugal-pic-1;
+            width: 100%;
+        }
+    
+        .c-card-7 {
+            grid-area: portugal-card-1;
+            margin-left: 3rem;
+        }
+    
+        .c-card-8 {
+            grid-area: portugal-card-2;
+        }
+        
+        .career-8 {
+            grid-area: portugal-pic-2;
+            width: 100%;
+        }
+    
+        .c-card-9 {
+            grid-area: portugal-card-3;
+            margin-right: 3rem;
+        }
+    
+        .career-9 {
+            grid-area: portugal-pic-3;
+            width: 100%;
+        }
+    
+        .c-card-10 {
+            grid-area: portugal-card-4;
+            margin-left: 3rem;
+        }
+    
+        .career-10 {
+            grid-area: portugal-pic-4;
+            width: 100%;
+        }
+    
+        .c-card-11 {
+            grid-area: portugal-card-5;
+            margin-right: 3rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .career-page:before, .career-page:after  {
+       display: none;
+    }
+
+}

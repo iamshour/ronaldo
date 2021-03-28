@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Libre Baskerville', serif;
+$font-col: #0E2331;
+$bg-regular: #7DBCB1;
+$bg-dark: #68B1A5;
+$bg-light: #A7E1D7;
+$bg-very-light: #D8FFF8;
+$shelf-stroke: #56A597;
+$label-fill: #63A599;
+$label-stroke: #256358;
+$botton-basic: #3F7295;
+$primary-grad: linear-gradient(to right, #7DBCB1, #6597B9);
+$secondary-grad: linear-gradient(to bottom, #7DBCB1, #6597B9);
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-font;
+    color: $font-col;
+    height: 100vh;
+    width: 100%;
+}
+
+@mixin flexy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $bg-very-light;
+}
+
+a:hover {
+    color: $font-col;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 4rem;
+    width: 25.2rem;
+    text-align: center;
+    span {
+        font-size: 5.8rem;
+    }
+}
+
+h2 {
+    font-family: $secondary-font;
+    color: $bg-very-light;
+    line-height: auto;
+    font-size: 2.6rem;
+    font-weight: 400;
+    height: auto;
+    position: absolute;
+    top: 2.4rem;
+    left: 1.6rem;
+    width: 50%;
+}
+
+h3 {
+    font-family: $secondary-font;
+    font-weight: bold;
+    padding-bottom: .8rem;
+    color: $font-col;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.btn {
+    background-color: $botton-basic;
+    color: $bg-very-light;
+    border-radius: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bg-very-light;
+        color: $botton-basic;
+        svg {
+            fill: $botton-basic;
+        }
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+footer {
+
+    background-color: $bg-dark;
+    width: 100%;
+    height: 9.7rem;
+    display: flex;
+    flex-direction: row;
+    
+        .btn-back, .btn-next {
+            font-size: 2rem;
+            line-height: 2.6rem;
+            padding: 0.8rem 1.6rem;
+            display: flex;
+            flex-direction: row;
+        
+            svg {
+                padding-right: .8rem;
+                fill: $bg-very-light;
+            }
+        }
+        
+        .btn-back {
+            margin: auto auto auto 1.6rem;
+        }
+        
+        .btn-next {
+            margin: auto 1.6rem auto auto;
+        
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+}
+
+.card {
+    border-radius: 1.6rem;
+    background-color: $bg-very-light;
+    padding: 1rem;
+    margin: 0 1.6rem;
+}
+
+.card-content {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+
+    h2 {
+        font-size: 3rem;
+        top: 3rem;
+        left: 3rem;
+        width: 80vw;
+        text-align: left;
+    }
+
+    footer {
+
+        .btn-back, .btn-next {
+            font-size: 2.6rem;
+            line-height: 3.2rem;
+            padding: 1rem 1.6rem;
+        
+            svg {
+                padding-right: 1rem;
+                transform: scale(1.2);
+                margin-top: .4rem;
+            }
+        }
+    
+        .btn-back {
+            margin: auto auto auto 3rem;
+        }
+        
+        .btn-next {
+            margin: auto 3rem auto auto;
+           
+            svg {
+                transform: scale(1.2) rotate(180deg);
+            }
+        }
+    }
+
+    .card-content {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 6.5rem;
+        font-weight: 400;
+        line-height: 8.8rem;
+        width: 57.3rem;
+        text-align: center;
+        span {
+            font-size: 13.3rem;
+        }
+    }
+
+    h2 {
+        font-size: 3.8rem;
+        top: 10.4rem;
+        left: 3rem;
+        width: 80vw;
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+
+    .card-content {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+}
+
+@media only screen and (min-width: 1080px){
+
+    h2 {
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+        top: 11.7rem;
+        left: 4rem;
+        width: 26.8rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    html {
+        font-size: 11px;
+    }
+
+    body {
+        height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    footer {
+        border-radius: 1.6rem;
+    }
+}

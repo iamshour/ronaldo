@@ -1,0 +1,150 @@
+.legacy-page {
+    background-color: $bg-light;
+    position: relative;
+}
+
+.custom-card {
+  text-align: justify;
+  text-indent: 1.6rem;
+  word-spacing: -1px;
+  margin-top: 4rem;
+}
+
+.legacy-grid {
+  margin: 6rem 1.6rem;
+}
+
+.container {
+  border-radius: 5px;
+  font-family: $secondary-font;
+  
+  h5 {
+    font-size: 2.2rem;
+    color: $font-col;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 1.6rem;
+
+    span {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: .8rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  input[type=text], textarea {
+    font-family: $primary-font;
+    padding: 12px;
+    border: 1px solid $bg-dark;
+    border-radius: 1.6rem;
+    // resize: vertical;
+    background-color: $bg-very-light;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $bg-dark;
+      background-color: #e4f7f3;
+    }
+  }
+    
+  input[type=submit] {
+    font-family: $primary-font;
+    background-color: $bg-dark;
+    color: $bg-very-light;
+    padding: .6rem 3.2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid #418075;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+
+    &:hover {
+      background-color: #24665b;
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      outline: none;
+      background-color: $bg-dark;
+      color: $font-col;
+    }
+  }
+}
+
+.legacy-footer {
+  .box {
+    display: none;
+  }
+}
+    
+.footer-pic {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .custom-card {
+    word-spacing: 0;
+    margin: 10rem 3rem 0 3rem;
+  }
+
+  .legacy-grid {
+    margin: 6rem 3rem 0 3rem;
+    display: flex;
+    flex-direction: row;
+
+    .footer-pic {
+      display: unset;
+      width: 50%;
+      height: 50%;
+      align-self: flex-end;
+      justify-self: flex-end;
+      margin-left: 3rem;
+    }
+
+    .container {
+      width: 50%;
+      margin: 0;
+    } 
+  }
+}
+
+@media screen and (min-width: 1080px) {
+
+  .custom-card {
+    word-spacing: 0;
+    margin: 10rem auto 5rem auto;
+    width: 75%;
+  }
+
+  .legacy-grid {
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: row;
+
+    .footer-pic {
+      margin-left: 4rem;
+    }
+
+    .container {
+      align-self: center;
+    } 
+  }
+}
