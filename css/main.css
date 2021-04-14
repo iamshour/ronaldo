@@ -380,7 +380,7 @@ nav {
 }
 
 .nav-container nav .nav-list {
-  height: 100%;
+  height: 60%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,12 +392,12 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .nav-container nav .nav-list li {
   display: block;
-  padding-bottom: 5.6rem;
+  padding-bottom: 5rem;
 }
 
 .nav-container nav .nav-list li .current {
@@ -407,6 +407,72 @@ nav {
 
 .nav-container nav .nav-list li a:hover {
   font-weight: bold;
+}
+
+.nav-container nav .nav-list li:last-child {
+  margin-bottom: 0;
+}
+
+.nav-container nav .nav-box {
+  width: 100%;
+  position: absolute;
+  bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2e6081;
+  padding: 1rem 0;
+}
+
+.nav-container nav .nav-box h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #D8FFF8;
+  padding-bottom: 2rem;
+  width: 70%;
+  text-align: center;
+}
+
+.nav-container nav .nav-box .icons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav-container nav .nav-box .icons a {
+  margin-right: 2rem;
+}
+
+.nav-container nav .nav-box .icons a:last-child {
+  margin-right: 0;
+}
+
+.nav-container nav .nav-box .icons a img:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 @-webkit-keyframes navig {
@@ -445,6 +511,18 @@ nav {
   .nav-container nav .nav-list li {
     padding-bottom: 7.4rem;
   }
+  .nav-container nav .nav-box {
+    padding: 3rem 0;
+  }
+  .nav-container nav .nav-box h4 {
+    padding-bottom: 3rem;
+  }
+  .nav-container nav .nav-box .icons a {
+    margin-right: 3rem;
+  }
+  .nav-container nav .nav-box .icons a:last-child {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -460,6 +538,9 @@ nav {
     -webkit-animation: none;
             animation: none;
     padding: 3rem 4rem 0 0;
+  }
+  .nav-container nav .nav-box {
+    display: none;
   }
   .nav-container nav .nav-list {
     -webkit-box-orient: horizontal;
@@ -1207,12 +1288,12 @@ nav {
   }
 }
 
-.honours-page {
+.honors-page {
   background-color: #7DBCB1;
   position: relative;
 }
 
-.honours-grid {
+.honors-grid {
   margin: 1.6rem 0 6rem 0;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
@@ -1223,11 +1304,11 @@ nav {
       grid-template-areas: "sporting" "united" "madrid" "juve" "portugal";
 }
 
-.honours-grid .hon-1, .honours-grid .hon-2, .honours-grid .hon-3 {
+.honors-grid .hon-1, .honors-grid .hon-2, .honors-grid .hon-3 {
   display: none;
 }
 
-.honours-grid .team {
+.honors-grid .team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1238,11 +1319,11 @@ nav {
   margin-bottom: 4rem;
 }
 
-.honours-grid .team:nth-last-child(1) {
+.honors-grid .team:nth-last-child(1) {
   margin-bottom: 0;
 }
 
-.honours-grid .team .logo {
+.honors-grid .team .logo {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -1251,7 +1332,7 @@ nav {
   margin-bottom: 1.6rem;
 }
 
-.honours-grid .team .trophy-card {
+.honors-grid .team .trophy-card {
   position: relative;
   margin-bottom: 2.5rem;
   -ms-flex-item-align: center;
@@ -1261,11 +1342,11 @@ nav {
       justify-self: center;
 }
 
-.honours-grid .team .trophy-card:nth-last-child(1) {
+.honors-grid .team .trophy-card:nth-last-child(1) {
   margin-bottom: 0;
 }
 
-.honours-grid .team .trophy-card img {
+.honors-grid .team .trophy-card img {
   position: absolute;
   z-index: 10;
   top: 0;
@@ -1273,7 +1354,7 @@ nav {
   bottom: 0;
 }
 
-.honours-grid .team .trophy-card .caption {
+.honors-grid .team .trophy-card .caption {
   position: absolute;
   z-index: 10;
   text-align: center;
@@ -1287,11 +1368,11 @@ nav {
   letter-spacing: -1px;
 }
 
-.honours-grid .team .trophy-card .custom {
+.honors-grid .team .trophy-card .custom {
   padding-left: 2.2rem;
 }
 
-.honours-grid .team .trophy-card .background {
+.honors-grid .team .trophy-card .background {
   width: 35rem;
   height: 7.5rem;
   border-radius: 3.2rem;
@@ -1300,31 +1381,31 @@ nav {
           filter: blur(10px);
 }
 
-.honours-grid .sporting {
+.honors-grid .sporting {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: sporting;
 }
 
-.honours-grid .united {
+.honors-grid .united {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: united;
 }
 
-.honours-grid .madrid {
+.honors-grid .madrid {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: madrid;
 }
 
-.honours-grid .juve {
+.honors-grid .juve {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: juve;
 }
 
-.honours-grid .portugal {
+.honors-grid .portugal {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: portugal;
@@ -1348,7 +1429,7 @@ nav {
     height: 39rem;
     width: 39rem;
   }
-  .honours-grid {
+  .honors-grid {
     margin: 10rem auto 6rem auto;
     display: -ms-grid;
     display: grid;
@@ -1360,27 +1441,27 @@ nav {
     place-items: center;
         grid-template-areas: "sporting united" "madrid united" "madrid hon-1" "hon-2 juve" "portugal hon-3";
   }
-  .honours-grid .hon-1, .honours-grid .hon-2, .honours-grid .hon-3 {
+  .honors-grid .hon-1, .honors-grid .hon-2, .honors-grid .hon-3 {
     display: unset;
     width: 34.56rem;
     height: auto;
   }
-  .honours-grid .team {
+  .honors-grid .team {
     margin-bottom: 0rem;
   }
-  .honours-grid .hon-1 {
+  .honors-grid .hon-1 {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: hon-1;
     margin: 8rem auto -4rem auto;
   }
-  .honours-grid .hon-2 {
+  .honors-grid .hon-2 {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: hon-2;
     margin: 4rem auto 10rem auto;
   }
-  .honours-grid .hon-3 {
+  .honors-grid .hon-3 {
     -ms-grid-row: 5;
     -ms-grid-column: 2;
     grid-area: hon-3;
@@ -1389,30 +1470,30 @@ nav {
         align-self: end;
     margin-bottom: -6rem;
   }
-  .honours-grid .sporting {
+  .honors-grid .sporting {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: sporting;
   }
-  .honours-grid .united {
+  .honors-grid .united {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     grid-area: united;
   }
-  .honours-grid .madrid {
+  .honors-grid .madrid {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: madrid;
   }
-  .honours-grid .juve {
+  .honors-grid .juve {
     -ms-grid-row: 4;
     -ms-grid-column: 2;
     grid-area: juve;
     margin: 2rem auto -6rem auto;
   }
-  .honours-grid .portugal {
+  .honors-grid .portugal {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: portugal;
@@ -1420,7 +1501,7 @@ nav {
 }
 
 @media only screen and (min-width: 1080px) {
-  .honours-grid .hon-1, .honours-grid .hon-2, .honours-grid .hon-3 {
+  .honors-grid .hon-1, .honors-grid .hon-2, .honors-grid .hon-3 {
     width: 44.56rem;
     height: auto;
   }
@@ -1918,6 +1999,39 @@ nav {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .legacy-footer .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #5ba79a;
+    padding: 2rem;
+  }
+  .legacy-footer .box h4 {
+    font-size: 1.6rem;
+    color: #D8FFF8;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+  .legacy-footer .box .icons a {
+    margin-right: 3rem;
+  }
+  .legacy-footer .box .icons a:last-child {
+    margin-right: 0;
+  }
+  .legacy-footer .box .icons a img:hover {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
   }
 }
 /*# sourceMappingURL=main.css.map */

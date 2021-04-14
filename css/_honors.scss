@@ -1,9 +1,9 @@
-.honours-page {
+.honors-page {
     background-color: $bg-regular;
     position: relative;
 }
 
-.honours-grid {
+.honors-grid {
 
     margin: 1.6rem 0 6rem 0;
     .hon-1, .hon-2, .hon-3 {
@@ -119,7 +119,7 @@
         }
     }
 
-    .honours-grid {
+    .honors-grid {
 
         .hon-1, .hon-2, .hon-3 {
         display: unset;
@@ -184,7 +184,7 @@
 
 @media only screen and (min-width: 1080px) {
     
-    .honours-grid {
+    .honors-grid {
         .hon-1, .hon-2, .hon-3 {
             width: 44.56rem;
             height: auto;

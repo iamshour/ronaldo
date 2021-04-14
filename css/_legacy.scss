@@ -147,4 +147,37 @@
       align-self: center;
     } 
   }
+
+  .legacy-footer {
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #5ba79a;
+        padding: 2rem;
+    
+        h4 {
+          font-size: 1.6rem;
+          color: $bg-very-light;
+          font-weight: 400;
+          padding-bottom: 1rem;
+        }
+    
+        .icons {
+    
+          a {
+            margin-right: 3rem;
+    
+            &:last-child {
+              margin-right: 0;
+            }
+    
+            img:hover {
+              transform: scale(.98);
+            }
+          }
+        }
+    }
+}
 }
